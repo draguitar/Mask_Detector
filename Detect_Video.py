@@ -8,7 +8,6 @@ import imutils
 import time
 import cv2
 import os
-from playsound import playsound
 import time
 from pygame import mixer
 
@@ -20,12 +19,6 @@ FACE = "face_detector"
 MODEL = "mask_detector.model"
 CONFIDENCE = 0.5
 
-def mask_detect_voice():
-    localtime = time.localtime()
-    result = time.strftime("%Y-%m-%d %I:%M:%S %p", localtime)
-    print(result)
-    path = os.path.abspath("voice/1.mp3")
-    playsound(path)    
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
     (h, w) = frame.shape[:2]
