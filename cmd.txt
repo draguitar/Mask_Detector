@@ -1,0 +1,18 @@
+# 建立虛擬環境
+conda create --name mask python=3.7
+
+# 進入虛擬環境 mask
+conda activate mask
+
+# 安裝套件
+pip install -r requirements.txt
+
+# 訓練模型	
+	Training.py
+
+#圖片的口罩偵測
+	Detect_Img.py
+	
+#視訊口罩偵測
+	Detect_Video.py
+
